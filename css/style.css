@@ -1,0 +1,169 @@
+
+/************************************************ INITAL VALUES ************************************************/
+
+::selection {
+    color: rgb(255, 255, 255);
+    /* color: linear-gradient(to right, rgba(3, 66, 108, 0.7), rgba(23, 131, 137, 1));  */
+    /* background: linear-gradient(to right, rgba(3, 66, 108, 0.7), rgba(23, 131, 137, 1));  */
+    background: rgba(165, 0, 0, 0.815);
+  }
+
+body {
+    padding-top: 3em; 
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+th {
+    font-size: 1.2em;
+}
+
+
+/***************************************************** IDS *****************************************************/
+
+/***** DROPDOWN *****/
+#dropdownCadeaux .dropdown-item:hover {
+    color: black !important;
+    transition: 0.5s;
+}
+
+/***** NAV *****/
+#nav-link {
+    transition: 0.5s;
+}
+#nav-link:hover {
+    font-weight: bold;
+    font-size: 150%;
+    transition: 0.5s;
+}
+#nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+#nav-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/***** NAVBAR *****/
+#navbarTitle {
+    font-size: 225%;
+}
+
+
+
+/**************************************************** CLASS ****************************************************/
+
+/***** DROPDOWN *****/
+div .dropdown-menu {
+    background-color: rgba(194, 0, 0, 0.801);
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.78);
+    border-radius: 25px;
+    /* background: radial-gradient(rgb(192, 55, 55)80%, rgba(255, 97, 97, 0.7)); */
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background: none !important;
+}
+.dropdown-text:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    color: black;
+    display: inline-flex;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+/***** NAVBAR *****/
+.myNavbar {
+    background: linear-gradient(to left, rgba(223, 223, 223, 0.7), rgb(194, 0, 0) 95%);
+}
+.navbar {
+    margin-top: 0.3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.navbar-toggler {
+    background-color: rgba(134, 255, 123, 0.719) !important;
+    border-color:  white !important;
+}
+
+/***** PROGRESSBAR *****/
+.progressNavBar {
+    height: 7px;
+    background: linear-gradient(to left, rgba(233, 233, 233), rgb(194, 0, 0) 95%);
+    width: 0%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.progressNavBarContainer {
+    height: 7px;
+    /* background: linear-gradient(to right, rgba(3, 66, 108, 0.7), rgb(89, 172, 175)); */
+    background-color: rgba(223, 223, 223, 0.5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/***** OTHER *****/
+.fem08 {
+    font-size: 0.8em;
+}
+.o8 {
+    opacity: 0.8;
+}
+.ocra {
+    font-family: ocr a;
+}
+
+
+
+/************************************************ POUBELLE / A TRIER *********************************************************************/
+
+@keyframes bounce {
+    from {transform: translateY(0);}
+    to   {transform: translateY(-5px);}
+}
+
+@keyframes horMove {
+    from {transform: translateX(0);}
+    to   {transform: translateX(5px);}
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, rgba(137, 23, 23, 0), rgb(177, 0, 0) 50%, rgba(137, 23, 23, 0)); 
+  /* border-radius: 10px; */
+}
